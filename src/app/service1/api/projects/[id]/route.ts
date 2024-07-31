@@ -9,6 +9,7 @@ export async function GET(
   if (project) {
     return NextResponse.json({
       url: `${process.env.BASE_URL}/service1/projects/${context.params.id}`,
+      iframe: `${process.env.BASE_URL}/iframes/service1/projects/${context.params.id}`,
       data: project,
     });
   }
