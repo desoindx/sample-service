@@ -13,7 +13,9 @@ export const createProject1 = async (id: string) => {
   return prisma.project1.create({
     data: {
       id,
-      ...hubData.data,
+      name: hubData.data.name,
+      description: hubData.data.description,
+      owner: hubData.data.owner,
       score1: Math.random() * 20,
       score2: Math.random() * 20,
       scoreTotal: Math.random() * 20,
