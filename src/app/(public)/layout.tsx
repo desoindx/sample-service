@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: JSX.Element }) {
               },
             ]}
           />
-          <main>{children}</main>
+          <main className="fr-container fr-container--fluid">{children}</main>
         </DsfrProvider>
       </body>
     </html>
